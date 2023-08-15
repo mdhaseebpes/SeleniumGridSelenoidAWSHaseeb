@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="regression Test Suite" verbose="4" thread-count="3"
+       parallel="tests">
+
+    <listeners>
+        <listener
+                class-name="com.magneto.listeners.ExtentReportListener"/>
+        <listener
+                class-name="com.magneto.listeners.AllureListener"/>
+       <!-- <listener
+                class-name="com.magneto.listeners.AnnotationTransformer"/>-->
+    </listeners>
+
+    <test name="Login Page test chrome">
+        <parameter name="browser" value="chrome" />
+        <classes>
+            <class name="com.magneto.test.LoginTest"/>
+        </classes>
+    </test>
+
+    <test name="Home page test chrome">
+        <parameter name="browser" value="chrome" />
+        <classes>
+            <class name="com.magneto.test.HomePageTest"/>
+        </classes>
+    </test>
+
+    <test name="Login Page test firefox">
+        <parameter name="browser" value="firefox" />
+        <classes>
+            <class name="com.magneto.test.LoginTest"/>
+        </classes>
+    </test>
+
+    <test name="Home page test firefox">
+        <parameter name="browser" value="firefox" />
+        <classes>
+            <class name="com.magneto.test.HomePageTest"/>
+        </classes>
+    </test>
+
+</suite>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="regression Test Suite" verbose="4" thread-count="3"
+       parallel="tests">
+
+    <listeners>
+        <listener
+                class-name="com.magneto.listeners.ExtentReportListener"/>
+        <listener
+                class-name="com.magneto.listeners.AllureListener"/>
+       <!-- <listener
+                class-name="com.magneto.listeners.AnnotationTransformer"/>-->
+    </listeners>
+
+    <test name="Login Page test chrome_90">
+        <parameter name="browser" value="chrome" />
+        <parameter name="browserversion" value="90.0" />
+        <parameter name="testcasename" value="Login Page Test" />
+        <classes>
+            <class name="com.magneto.test.LoginTest"/>
+        </classes>
+    </test>
+
+    <test name="Home page test chrome_109">
+        <parameter name="browser" value="chrome" />
+        <parameter name="browserversion" value="109.0" />
+        <parameter name="testcasename" value="Login Page Test" />
+        <classes>
+            <class name="com.magneto.test.HomePageTest"/>
+        </classes>
+    </test>
+
+   <!-- <test name="Login Page test firefox_77">
+        <parameter name="browser" value="firefox" />
+        <parameter name="browserversion" value="77.0" />
+        <parameter name="testcasename" value="login page test" />
+        <classes>
+            <class name="com.magneto.test.LoginTest"/>
+        </classes>
+    </test>
+
+    <test name="Home page test firefox_83">
+        <parameter name="browser" value="firefox" />
+        <parameter name="browserversion" value="83.0" />
+        <parameter name="testcasename" value="Home page test" />
+        <classes>
+            <class name="com.magneto.test.HomePageTest"/>
+        </classes>
+    </test>-->
+
+</suite>
