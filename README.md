@@ -13,7 +13,7 @@ Before running the tests, make sure you have the following installed:
 # Getting Started
 
 To get started, clone the repository from GitHub:
-git clone https://github.com/your-username/api-automation-framework.git
+git clone https://github.com/mdhaseebpes/SeleniumGridSelenoidAWSHaseeb.git
 
 # Running the Tests
 
